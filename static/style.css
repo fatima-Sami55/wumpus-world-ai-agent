@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI';
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.controls {
+    margin: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: gray;
+}
+
+#grid {
+    display: grid;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.agent { background: #facc15; }
+.safe { background: #22c55e; }
+.pit { background: #ef4444; }
+.wumpus { background: #7f1d1d; }
+
+.hidden {
+    display: none;
+}

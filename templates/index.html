@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Wumpus Agent</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧠 Wumpus AI Agent</h1>
+
+      <div class="controls">
+        <input
+          type="number"
+          id="size"
+          placeholder="Grid size (4–20)"
+          min="4"
+          max="20"
+        />
+        <button id="generateBtn" onclick="generateGrid()">Generate Grid</button>
+        <button id="runBtn" onclick="runSimulation()" disabled>
+          Start Execution
+        </button>
+      </div>
+
+      <p id="error" style="color: red"></p>
+
+      <div id="grid"></div>
+
+      <div id="stats" class="hidden">
+        <h3>📊 Results</h3>
+        <p>Inference Steps: <span id="inf"></span></p>
+        <p>Visited Cells: <span id="vis"></span></p>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
